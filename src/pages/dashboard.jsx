@@ -24,7 +24,7 @@ function Dashboard({ merchant, onCheckout }) {
 
       try {
         const response = await fetch(
-          'http://localhost:8080/api/analytics/merchant',
+          'https://shipsure-api.onrender.com/api/analytics/merchant',
           {
             headers: {
               Authorization: `Bearer ${merchant.token}`
@@ -62,7 +62,7 @@ function Dashboard({ merchant, onCheckout }) {
 
       try {
         const response = await fetch(
-          'http://localhost:8080/api/orders/recent',
+          'https://shipsure-api.onrender.com/api/orders/recent',
           {
             headers: {
               Authorization: `Bearer ${merchant.token}`
@@ -114,7 +114,7 @@ function Dashboard({ merchant, onCheckout }) {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/risk/checkout?phone=${encodeURIComponent(phone)}`
+        `https://shipsure-api.onrender.com/api/risk/checkout?phone=${encodeURIComponent(phone)}`
       )
 
       if (!response.ok) {

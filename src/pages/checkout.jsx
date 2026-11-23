@@ -21,7 +21,7 @@ function Checkout() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/risk/checkout?phone=${encodeURIComponent(phone)}`
+        `https://shipsure-api.onrender.com/api/risk/checkout?phone=${encodeURIComponent(phone)}`
       )
 
       if (!response.ok) {

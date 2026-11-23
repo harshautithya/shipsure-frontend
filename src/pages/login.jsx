@@ -14,7 +14,7 @@ function Login({ onLogin, onGoToSignup }) {
 
     try {
       const response = await fetch(
-        'http://localhost:8080/api/auth/login',
+        'https://shipsure-api.onrender.com/api/auth/login',
         {
           method: 'POST',
           headers: {

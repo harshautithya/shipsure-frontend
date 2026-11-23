@@ -32,7 +32,7 @@ function Signup({ onSignupSuccess, onGoToLogin }) {
 
     try {
       const response = await fetch(
-        'http://localhost:8080/api/auth/register',
+        'https://shipsure-api.onrender.com/api/auth/register',
         {
           method: 'POST',
           headers: {
